@@ -1,0 +1,195 @@
+body{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    background-color: #1e202b;
+}
+.layer{
+    background-image: url(../images/giphy.gif);
+    background-position: center;
+    background-size: cover;
+}
+.layer h1{
+    font-size: 55px;
+}
+.layer h1::after{
+    content: '|';
+    animation-name: typing;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing {
+    0%{content: '|';}
+    10%{content: 'Moa|';}
+    20%{content: 'Moaaz |';}
+    30%{content: 'Moaaz Moh|';}
+    40%{content: 'Moaaz Mohame|';}
+    50%{content: 'Moaaz Mohamed |';}
+    60%{content: 'Moaaz Mohame|';}
+    70%{content: 'Moaaz Moh|';}
+    80%{content: 'Moaaz |';}
+    90%{content: 'Moa|';}
+    100%{content: '|';}
+    
+}
+.weather-style{
+    background-image: url(../images/17d384c11324879b5a42efb3224a3c74.jpg);
+    background-size: cover;
+}
+.site-header{
+    background-color: #1e202b;
+    padding: 50px 0;
+}
+.logo-title{
+    vertical-align: middle;
+}
+.logo-header h1{
+    font-size: medium;
+    font-weight: 700;
+}
+.logo-header small{
+    color: #bfc1c8;
+    font-size:10px;
+}
+.nav .list-menue-active{
+    color:#009ad8 ;
+    border-color: #009ad8 !important;
+    cursor: pointer;
+}
+.nav .list-menue:hover{
+    color:#009ad8 ;
+    border: 2px solid;
+    border-color: #009ad8;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.btn-menue{
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+}
+.btn-menue i{
+    transition: 0.5s;
+}
+.btn-menue i:hover{
+    border: 1px solid #009ad8;
+    color: #009ad8 !important;
+    border-radius: 50px;
+}
+.nav-menue li{
+    border-bottom: 1px solid #ffffff60;
+    text-align: center;
+    background-color: #3A0519;
+    cursor: pointer;
+}
+.nav-menue .list-menue-active{
+    color: #009ad8;
+}
+.find-location{
+    background-image: url(../images/pexels-andre-furtado-43594-1162251.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    min-height: 350px;
+}
+.find-location form{
+    padding-bottom: 70px;
+}
+.user-input{
+    padding-block: 14px;
+    border: unset !important;
+    box-shadow: unset !important;
+    border-color: unset !important;
+    background-color: #1e202b !important;
+    color: #fff !important;
+}
+.user-input::placeholder{
+    color: #ffffffab;
+}
+.user-button{
+    padding: 12px 40px ;
+    top: 2px;
+    right: 2px;
+    background-color: #009ad8;
+    border-color: #009ad8 !important;
+}
+.user-button:hover{
+    background-color: #009ad8 !important;
+}
+.forecast-table{
+    margin-bottom: 50px;
+    margin-top: -150px;
+}
+.date{
+    background-color: #1e202b;
+    padding: 10px 5px;
+}
+span {
+    color: #bfc1c8;
+}
+.forecast-content{
+    background-color: #262936;
+    padding: 25px 15px;
+}
+.forecast-content .num-1{
+    font-size: 80px;
+    font-weight: 700;
+}
+sub{
+    top: -0.5em ;
+}
+.forecast-content img{
+    width: 90px;
+}
+.custom{
+    color: #009ad8;
+    padding-bottom: 20px;
+}
+.forecast-content-icons span img {
+    width: 20px;
+}
+.tomorrow-date{
+    background-color: #1e202b;
+    padding: 10px 5px;
+}
+
+.tomorrow-content{
+    background-color: #262936;
+    padding-top: 50px;
+    height: 384px;
+}
+.tomorrow-content .num{
+    font-size: 35px;
+    font-weight: 700;
+}
+footer{
+    background-color: #262936;
+}
+.footer-icons i{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+    background-color: #1e202b;
+}
+.footer-icons i:hover{
+    background-color:#009ad8;
+    cursor: pointer;
+}
+@media screen and (max-width : 1000px) {
+    .layer h1{
+    font-size: 35px;
+}
+    .nav ul{
+        display: none !important;
+    }
+    .btn-menue{
+        display: unset !important;
+    }
+    .footer-content .footer-input{
+        width: 100% !important;
+    }
+    .footer-content .footer-icons{
+        padding-top: 25px !important;
+    }
+}

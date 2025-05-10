@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="layer" class="layer d-flex justify-content-center align-items-center flex-column position-absolute top-0 bottom-0 end-0 start-0 z-3">
+        <h1 class=""></h1>
+        <p class="my-2 fs-4">Weather app</p>
+    </div>
+    <div class="site-header">
+        <div class="container weather-navbar px-5 d-flex justify-content-between">
+            <a href="#" class="logo-header text-white text-decoration-none pointer-event ">
+                <img src="images/logo.png" alt="logo" class="d-inline-block me-3">
+                <div class="logo-title d-inline-block">
+                    <h1 class="d-inline-block">Weather</h1>
+                    <small class="d-block">tagline goes here</small>
+                </div>
+            </a>
+            <div class="nav">
+                <ul class="text-white list-unstyled d-flex gap-3">
+                    <li class="list-menue-active border border-2 rounded-5 px-4 py-1 ">Home</li>
+                    <li class="list-menue px-4 py-1 pointer-event ">News</li>
+                    <li class="list-menue px-4 py-1 pointer-event ">Live Cameras</li>
+                    <li class="list-menue px-4 py-1 pointer-event ">Photos</li>
+                    <li class="list-menue px-4 py-1 pointer-event ">Contact</li>
+                </ul>
+            </div>
+            <button class="btn-menue d-none" id="btnMenue">
+                <i class="fa-solid fa-bars p-3 text-white"></i>
+            </button>
+        </div>
+        <div class="nav-menue pt-4 container d-none" id="navMenue">
+            <ul class="text-white list-unstyled">
+                <li class="list-menue-active p-3 rounded-top-4">Home</li>
+                <li class="list-menue p-3 ">News</li>
+                <li class="list-menue p-3 ">Live Cameras</li>
+                <li class="list-menue p-3 ">Photos</li>
+                <li class="list-menue p-3 rounded-bottom-4 border-bottom-0 ">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="find-location">
+        <div class="container">
+            <form class="position-relative">
+                <input type="text" placeholder="Find your location..." class="form-control border rounded-5 user-input" id="findInput">
+                <button class="btn position-absolute border rounded-5 text-white user-button">Find</button>
+            </form>
+        </div>
+    </div>
+    <div class="forecast-table">
+        <div class="container">
+            <div class="row forecast" id="forecastTable">
+                <!-- <div class="col-lg-4">
+                    <div class="weather-style rounded rounded-3 forecast-today h-100">
+                        <div class="date d-flex justify-content-between rounded-top-3">
+                            <span>sunday</span>
+                            <span>10may</span>
+                        </div>
+                        <div class="forecast-content rounded-bottom-3">
+                            <div>
+                                <span>cairo</span>
+                                <p class="num-1">25<sub>o</sub>c</p>
+                            </div>
+                            <div>
+                                <img src="images/113.webp" alt="113">
+                            </div>
+                            <p class="custom">clear</p>
+                            <div class="forecast-content-icons d-flex justify-content-around">
+                                <span><img src="images/icon-umberella.png" alt="umberella"> 20%</span>
+                                <span><img src="images/icon-wind.png" alt="wind">118kh </span>
+                                <span><img src="images/icon-compass.png" alt="compass">east </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-style rounded rounded-3 forecast-tomorrow h-100 ">
+                        <div class="tomorrow-date text-center rounded-top-3">
+                            <span>Thursday</span>
+                        </div>
+                        <div class="tomorrow-content content-style1 text-center rounded-bottom-3">
+                            <img src="images/113 (1).webp" alt="114">
+                            <p class="num m-0">22.1<sub>o</sub>C</p>
+                            <span>20.1<sub>o</sub></span>
+                            <p class="custom mt-3">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="weather-style rounded rounded-3 forecast-tomorrow h-100 ">
+                        <div class="tomorrow-date text-center rounded-top-3">
+                            <span>Thursday</span>
+                        </div>
+                        <div class="tomorrow-content content-style2 text-center rounded-bottom-3">
+                            <img src="images/113 (1).webp" alt="114">
+                            <p class="num m-0">22.1<sub>o</sub>C</p>
+                            <span>20.1<sub>o</sub></span>
+                            <p class="custom mt-3">Sunny</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content py-5 d-lg-flex justify-content-between">
+                <div class="footer-input w-75 position-relative">
+                    <input type="text" placeholder="Enter your email to subscribe..." class="form-control user-input border rounded-5">
+                    <button class="btn border rounded-5 text-white position-absolute user-button">Subscribe</button>
+                </div>
+                <div class="footer-icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+            <div class="pb-4">
+                <p class="text-center">Copyright 2025 Company name. Designed by <span class="text-info">Moaaz Mohamed</span>. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
